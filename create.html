@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project on ScratchHub</title>
+  <link rel="stylesheet" href="create.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <a href="index.html">
+        <img src="images/logo.png" 
+            alt="Go to Home" 
+            style="border: none; cursor: pointer;" 
+            width="150">
+    </a>
+    <h1>Create your own project,</h1>
+    <button id="newFileButton" onclick="createNewFile()">New File</button>
+    <button id="saveButton" onclick="saveFile()">Save File</button>
+    <h2 id="fileName">No file selected</h2>
+    <h1>Output:</h1>
+    <iframe id="output"></iframe>
+    <script src="create.js"></script>
+    <h1>Upload files:</h1>
+    <input type="file" id="fileInput" multiple>
+    <button id="uploadButton">Upload</button>
+    <div id="fileList"></div>
+    <script src="upload.js"></script>
+    <h1>Or make from the Scratch Website:</h1>
+    <a href="https://scratch.mit.edu/projects/editor/">
+      Go to Scratch Editor
+    </a>
+</body>
+</html>
